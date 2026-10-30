@@ -1,0 +1,30 @@
+Sum of Sunshine Score: 15.0
+
+The outfit
+----------
+Shirt: tank top 	Pants:  jeans	Shoes: tan boots
+Sunshine's info [symbol = Sun, name = Sunshine, occupation = Scientist]
+The queue(current outfit) is: [tank top, jeans, tan boots]
+
+Sum of Bryan Score: 24.0
+
+The outfit
+----------
+Shirt: turtleneck 	Pants:  black boots	Shoes:  
+Bryan's info [symbol = Snake, name = Bryan, species = Cyborg]
+The stack(current outfit) is: [turtleneck, tan camo, black boots]
+Sum of Sunshine Score: 30.0
+
+The outfit
+----------
+Shirt: button up 	Pants:  shorts	Shoes: black boots
+Sunshine's info [symbol = Sun, name = Sunshine, occupation = Scientist]
+The queue(current outfit) is: [button up, shorts, black boots]
+
+Sum of Bryan Score: 18.6
+
+The outfit
+----------
+Shirt: short sleeve jacket 	Pants:  orange boots	Shoes:  
+Bryan's info [symbol =  , name =  , species =  ]
+The stack(current outfit) is: [short sleeve jacket, monochrome, orange boots]

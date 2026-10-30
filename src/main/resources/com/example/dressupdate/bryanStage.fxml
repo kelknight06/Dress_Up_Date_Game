@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Authors: Kel Knight, Kendall Ward-Hill
+Class: CS265-02
+Date: 12/7/25
+Purpose: this is the fxml page which sets up all the visual specifics that are on this scene of the javafx application. it sets the bryan character
+ the buttons, and hides the clothing pieces on the character until the controller makes them visible-->
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dressupdate.Controller">
+    <ImageView AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/Bryan.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="bShirt1" visible="false" AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/bWearShirt1.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="bShoes1" visible="false" AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/bWearShoes1.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="bShoes2" visible="false" AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/bWearShoes2.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="bPants1" visible="false" AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/bWearPants1.png"/>
+        </image>
+    </ImageView>
+    <ImageView fx:id="bShirt2" visible="false" AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/bWearShirt2.png"/>
+        </image>
+    </ImageView>
+
+    <ImageView fx:id="bPants2" visible="false" AnchorPane.rightAnchor="-100.0" fitHeight="500" fitWidth="500" preserveRatio="true">
+        <image>
+            <Image url="@DressUpPics/bWearPants2.png"/>
+        </image>
+    </ImageView>
+    <Button AnchorPane.leftAnchor="50.0" onAction="#bShirt1click">
+        <graphic>
+            <ImageView fitHeight="100" fitWidth="100" preserveRatio="true" >
+                <image>
+                    <Image url="@DressUpPics/BShirt1.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button AnchorPane.leftAnchor="200.0" onAction="#bShirt2click">
+        <graphic>
+            <ImageView fitHeight="100" fitWidth="100" preserveRatio="true" >
+                <image>
+                    <Image url="@DressUpPics/BShirt2.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button AnchorPane.leftAnchor="55.0" AnchorPane.bottomAnchor="265.0" onAction="#bPants1click">
+        <graphic>
+            <ImageView fitHeight="150" fitWidth="150" preserveRatio="true" >
+                <image>
+                    <Image url="@DressUpPics/BPant1.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button AnchorPane.leftAnchor="218.0" AnchorPane.bottomAnchor="265.0" onAction="#bPants2click">
+        <graphic>
+            <ImageView fitHeight="150" fitWidth="150" preserveRatio="true" >
+                <image>
+                    <Image url="@DressUpPics/BPant2.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button AnchorPane.leftAnchor="48.0" AnchorPane.bottomAnchor="120.0" onAction="#bShoes1click">
+        <graphic>
+            <ImageView fitHeight="100" fitWidth="100" preserveRatio="true" >
+                <image>
+                    <Image url="@DressUpPics/BShoe1.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button AnchorPane.leftAnchor="200.0" AnchorPane.bottomAnchor="120.0" onAction="#bShoes2click">
+        <graphic>
+            <ImageView fitHeight="100" fitWidth="100" preserveRatio="true" >
+                <image>
+                    <Image url="@DressUpPics/BShoe2.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Button text="Remove!" AnchorPane.leftAnchor="75.0" AnchorPane.bottomAnchor="70.0" onAction="#bRemoveClick" />
+    <Button text="Go back!" AnchorPane.leftAnchor="228.0" AnchorPane.bottomAnchor="70.0" onAction="#switchToSun" />
+    <Button text="Add Info!" AnchorPane.leftAnchor="150.0" AnchorPane.bottomAnchor="70.0" onAction="#binfoclick" />
+    <Button text="Ready!" AnchorPane.leftAnchor="155.0" AnchorPane.bottomAnchor="30.0" onAction="#done" />
+</AnchorPane>
